@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="50" id="KGk-i7-Jjw" customClass="OrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="咖喱土豆排骨" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtz-U0-s1P">
+                        <rect key="frame" x="8" y="14" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unp-Ae-23D">
+                        <rect key="frame" x="282" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="UPg-6o-U0I"/>
+                            <constraint firstAttribute="width" constant="30" id="k8c-Fo-jWu"/>
+                        </constraints>
+                        <state key="normal" title="+">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZ5-2s-KcO">
+                        <rect key="frame" x="226" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="N8O-3z-uLQ"/>
+                            <constraint firstAttribute="height" constant="30" id="Oi1-XC-bSA"/>
+                        </constraints>
+                        <state key="normal" title="-">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-2L-a0C">
+                        <rect key="frame" x="264" y="14" width="10" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="$23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHR-wI-c3a">
+                        <rect key="frame" x="189" y="14" width="29" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Unp-Ae-23D" firstAttribute="leading" secondItem="Wpr-2L-a0C" secondAttribute="trailing" priority="500" constant="8" id="2zd-SJ-iO2"/>
+                    <constraint firstItem="IZ5-2s-KcO" firstAttribute="leading" secondItem="WHR-wI-c3a" secondAttribute="trailing" priority="500" constant="8" id="6Y7-Q5-2bS"/>
+                    <constraint firstAttribute="centerY" secondItem="Unp-Ae-23D" secondAttribute="centerY" id="9Z7-HT-QYY"/>
+                    <constraint firstItem="Wpr-2L-a0C" firstAttribute="leading" secondItem="IZ5-2s-KcO" secondAttribute="trailing" priority="500" constant="8" id="DuC-fp-5ml"/>
+                    <constraint firstItem="Jtz-U0-s1P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="500" constant="8" id="EHV-5H-EQv"/>
+                    <constraint firstAttribute="centerY" secondItem="IZ5-2s-KcO" secondAttribute="centerY" id="Sxi-cZ-tx4"/>
+                    <constraint firstAttribute="trailing" secondItem="Unp-Ae-23D" secondAttribute="trailing" priority="500" constant="8" id="U7E-P8-MLL"/>
+                    <constraint firstItem="WHR-wI-c3a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jtz-U0-s1P" secondAttribute="trailing" priority="500" constant="8" id="d92-b0-ruE"/>
+                    <constraint firstAttribute="centerY" secondItem="WHR-wI-c3a" secondAttribute="centerY" id="eSc-DU-gP5"/>
+                    <constraint firstAttribute="centerY" secondItem="Jtz-U0-s1P" secondAttribute="centerY" id="tCW-y1-l7K"/>
+                    <constraint firstAttribute="centerY" secondItem="Wpr-2L-a0C" secondAttribute="centerY" id="tXZ-53-6Ul"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="Unp-Ae-23D" id="gCX-nq-R1n"/>
+                <outlet property="minuteBtn" destination="IZ5-2s-KcO" id="IF5-lr-0Ot"/>
+                <outlet property="orderCountLabel" destination="Wpr-2L-a0C" id="GJQ-93-YHF"/>
+                <outlet property="orderNameLabel" destination="Jtz-U0-s1P" id="33j-9U-dFS"/>
+                <outlet property="orderTotalPriceLabel" destination="WHR-wI-c3a" id="35G-Pw-IRT"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="325"/>
+        </tableViewCell>
+    </objects>
+</document>

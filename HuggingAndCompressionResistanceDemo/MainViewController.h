@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  HuggingAndCompressionResistanceDemo
 //
 //  Created by c0ming on 4/27/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UITableViewController
 
 @end
-
